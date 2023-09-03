@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.body{
+  background: url("../bg.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scoreBox{
+  position: absolute;
+  top: 9px;
+  right: 200px;
+  font-size: 39px;
+}
+
+#board{
+  width: 90vmin;
+  height: 92vmin;
+  background: linear-gradient(rgb(235, 235, 102), rgb(78, 219, 78));
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+  background-color: red;
+  border: .25vmin solid white;
+  border-radius: 5px;
+  transform: scale(1.02);
+}
+
+.snake{
+  background-color: rgb(83, 69, 69);
+  border: .25vmin solid white;
+  border-radius: 12px;
+}
+
+.food{
+  background-color: purple;
+  border: .25vmin solid black;
+  border-radius: 12px;
+}
